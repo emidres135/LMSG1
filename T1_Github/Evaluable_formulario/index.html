@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <form action="procesa.php" method="get">
+            <h1 tabindex="1">Formulario</h1>
+
+            <div style="border: 2px solid #000; padding: 15px; margin: 10px; border-radius: 10px;">
+                <h3 style="text-align: center; margin-top: 0;">Datos Personales</h3>
+                <div class="caja">
+                    <label for="nombre" class="pegata" tabindex="2">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" required class="text" tabindex="3" maxlength="50">
+                </div>
+                <div class="caja">
+                    <label for="apellidos" class="pegata" tabindex="4">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apel" required class="text" tabindex="5" maxlength="50">
+                </div>
+                <div class="caja">
+                    <div class="caja">
+                        <label for="password" class="pegata" tabindex="6">Contraseña: </label>
+                        <input type="password" id="password" name="password" required class="text" tabindex="7"
+                            maxlength="8">
+                    </div>
+                    <div class="caja" style="padding-left: 10px;">
+                        <label for="edad" class="pegata" tabindex="8">Edad: </label>
+                        <input type="text" id="edad" name="edad" value="18" required class="text" tabindex="9" disabled>
+                    </div>
+                </div>
+
+                <div class="caja">
+                    <label for="sexo" class="pegata" tabindex="12">Sexo:</label>
+                    <input type="radio" name="sexo" id="sexo" tabindex="13">Mujer
+                    <input type="radio" name="sexo" tabindex="14" checked>Hombre
+                </div>
+            </div>
+
+            <div style="border: 2px; padding: 15px; margin: 10px; border-radius: 10px;">
+                <div class="caja">
+                    <!--Email-->
+                    <label for="email" class="pegata" tabindex="15">Email:</label>
+                    <input type="email" id="email" name="correo" required class="text" tabindex="16" readonly>
+                </div>
+                <div class="caja">
+                    <!-- Población: lista desplegable -->
+                    <label for="poblacion" class="pegata" tabindex="27">Población:</label>
+                    <select id="poblacion" name="poblacion" required class="text" tabindex="28">
+                        <option value="alicante">Alicante</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="sevilla" selected>Sevilla</option>
+                        <option value="valencia">Valencia</option>
+                    </select>
+                </div>
+                <div class="caja">
+                    <label for="message" class="pegata" tabindex="10">Descripción: </label>
+                    <textarea id="message" name="desc" rows="4" cols="30" required class="text"
+                        tabindex="11"></textarea>
+                </div>
+                <div class="caja">
+                    <input type="checkbox" id="info" name="masinf" value="si" tabindex="29" checked>
+                    <label for="info" class="pegata" tabindex="30"></label>
+                    <label for="">Deseo recibir información sobre novedades y ofertas.</label>
+                </div>
+                <div class="caja">
+                    <input type="checkbox" id="condiciones" name="condiciones" value="acepto" required tabindex="31">
+                    <label for="condiciones" class="pegata" tabindex="32"></label>
+                    <label for="">Declaro haber leído y aceptar las condiciones generales del programa y la normativa
+                        sobre protección de datos.</label>
+                </div>
+                <div class="caja">
+                    <!--Archivo-->
+                    <label for="archivo" class="pegata" tabindex="25">Adjuntar Foto:</label>
+                    <input type="file" id="archivo" name="foto" required class="text" tabindex="26">
+                </div>
+
+
+                <div class="caja">
+                    <!-- Enviar y Reiniciar-->
+                    <input type="submit" value="Enviar" class="boton" tabindex="27">
+                    <input type="reset" value="Reiniciar" class="boton" tabindex="28">
+                </div>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
