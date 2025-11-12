@@ -1,0 +1,53 @@
+
+body {
+
+  background-color: lightcyan; 
+  font-family:sans-serif;
+  line-height: 1.6;
+}
+
+h1.titulo-pagina {
+  text-align: right;
+  font-size: 2.8rem;
+}
+
+
+h2 {
+    text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+h2::first-letter{
+    font-size: 2em;
+}
+
+p {
+  
+  text-indent: 30px;
+  font-size: 1rem;
+}
+
+
+.fecha {
+  color: #d99600;
+}
+.term {
+  color: #a7750b;
+}
+.nom{
+    color: forestgreen;
+    background-color: white;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic; 
+  color: #666;
+  margin-top: 30px;
+  padding-top: 15px;
+}
