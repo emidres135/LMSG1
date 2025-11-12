@@ -1,0 +1,133 @@
+@font-face {
+
+  font-family: 'Gabriela';
+  
+  src: url('./gabriela.woff') format('woff');
+  
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin-Sketch';
+  
+  src: url('./cabin-sketch.woff') format('woff');
+  
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Cabin-Sketch', cursive;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.luis{
+    border: 2px solid rgba(196, 78, 6);
+    margin: 10px;
+    border-radius: 0 13px 13px 13px;
+    overflow: hidden;
+}
+.luis h2{
+    font-family: 'Gabriela', serif;
+    margin-top: 0%;
+    background-color: rgba(204, 86, 0);
+    color: white;
+    margin-bottom: 0;
+    
+}
+.luis p{
+    margin:0;
+    padding-left:rem;
+}
+.l_p1{
+    padding-left: 1rem;
+    background-color: rgba(219, 91, 0);
+}
+.l_p2{
+    padding-left: 2em;
+    background-color: rgb(255, 165, 102);
+}
+.gabri{
+    border: 2px solid rgba(214, 12, 212);
+    margin: 10px;
+    border-radius: 13px 0 13px 0;
+    overflow: hidden;
+}
+.gabri h2{
+    font-family: 'Gabriela', serif;
+    margin-top: 0%;
+    background-color: rgba(214, 12, 212);
+    color: white;
+    margin-bottom: 0;
+    
+}
+.gabri p{
+    margin:0;
+    padding-left:rem;
+}
+.g_p1{
+    padding-left: 1rem;
+    background-color: rgba(254, 128, 254);
+}
+.g_p2{
+    padding-left: 2em;
+    background-color: rgba(254, 204, 252);
+}
+.ana{
+    border: 2px solid rgba(214, 12, 212);
+    margin: 10px;
+    border-radius: 13px 0 13px 0;
+    overflow: hidden;
+}
+.ana h2{
+    font-family: 'Gabriela', serif;
+    margin-top: 0%;
+    background-color: rgba(214, 12, 212);
+    color: white;
+    margin-bottom: 0;
+    
+}
+.ana p{
+    margin:0;
+    padding-left:rem;
+}
+.a_p1{
+    padding-left: 1rem;
+    background-color: rgba(254, 128, 254);
+}
+.a_p2{
+    padding-left: 2em;
+    background-color: rgba(254, 204, 252);
+}
+.alfredo{
+    border: 2px solid rgba(196, 78, 6);
+    margin: 10px;
+    border-radius: 0 13px 13px 13px;
+    overflow: hidden;
+}
+.alfredo h2{
+    font-family: 'Gabriela', serif;
+    margin-top: 0%;
+    background-color: rgba(204, 86, 0);
+    color: white;
+    margin-bottom: 0;
+    
+}
+.alfredo p{
+    margin:0;
+    padding-left:rem;
+}
+.f_p1{
+    padding-left: 1rem;
+    background-color: rgba(219, 91, 0);
+}
+.f_p2{
+    padding-left: 2em;
+    background-color: rgb(255, 165, 102);
+}
