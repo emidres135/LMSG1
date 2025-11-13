@@ -1,0 +1,62 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-variant: small-caps;
+  margin: 0 0 1rem 0;
+  background-color: grey;
+  color: orange;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Selector de etiqueta */
+h5,
+h6 {
+  color: red;
+}
+
+a {
+  color: green;
+}
+
+/* Selector de clase */
+.title {
+  color: blue; /* Para el h1 y h4, como pide el texto */
+}
+
+.gray {
+  color: purple;
+}
+
+/* Selector id */
+#subtitle {
+  color: green; /* Para el h3, como pide el texto */
+}
+/* Selecciona al hermano que esté justo por debajo de el. El estilo se aplica al hermano inferior */
+.primero + p {
+  color: pink;
+}
+
+/* Selecciona todos los hermanos que esté por debajo de el. El estilo se aplica a todos los hermanos, pero no al primero */
+.inicial ~ h3 {
+  color: pink;
+}
+
+/* Selecciona todos los hijos. El estilo se aplica a todos los hijos */
+.descendente p {
+  color: coral;
+}
+
+/* Selecciona todos los hijos que sean directos, es decir que no estén dentro de otras etiquetas. El estilo se aplica a todos los hijos */
+.directo > p {
+  color: magenta;
+}
