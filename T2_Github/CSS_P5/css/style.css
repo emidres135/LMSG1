@@ -1,0 +1,67 @@
+#a {
+    background-image: url(../images/back_mantel.jpg);
+
+}
+
+#b {
+    background-image: url(../images/back_mantel.jpg);
+    background-origin: border-box;
+    background-clip: content-box;
+}
+
+#c {
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#d {
+    background-color: white;
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+#e{
+    background-image: url(../images/dh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f{
+    background-color: white;
+    background-image: url(../images/dh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+#g{
+    background-color: white;
+    background-image: url(../images/dh_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#h{
+    background-color: white;
+    background-image: url(../images/dh_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#i{
+    background: linear-gradient(to right, lightgreen , green);
+    
+}
+#j{
+    background: linear-gradient(to bottom,orange ,orange,orange, brown, orange);
+    
+}
+#k{
+    background: linear-gradient(to top, green, white);
+    
+}
+#l{
+    background: linear-gradient(to top, green, transparent);
+    
+}
