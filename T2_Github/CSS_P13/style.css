@@ -1,143 +1,165 @@
-/* 1. Configuración General y Estilos Base */
+/* 1. CONFIGURACIÓN GENERAL Y ESTILOS BASE */
+/* Importación de fuente Poppins [cite: 4] */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #ffc0cb; /* Rosa para etiquetas */
-    --bg-color: #f4f4f4;
-    --text-color: #333;
+    /* Variables CSS para colores y medidas [cite: 5] */
+    --primary-pink: #f8bbd0;
+    --bg-light: #f5f5f5;
+    --text-dark: #1a1a1a;
     --white: #ffffff;
+    --border-color: #e0e0e0;
+    --max-width: 87.5rem; /* 1400px [cite: 19] */
 }
 
+/* Reset global: Box-sizing y márgenes [cite: 7, 10] */
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0; 
-    min-height: 100vh;
-    padding: 1.5rem;
+    margin: 0;
+    min-height: 100vh; /* Altura mínima del viewport [cite: 8] */
+    padding: 1.5rem; /* Espaciado de 24px [cite: 9] */
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
 }
 
-/* 2. Cabecera y Navegación */
+/* 2. CABECERA (HEADER) Y NAVEGACIÓN [cite: 11] */
 header {
-    width: 100%;
+    width: 100%; /* Ancho completo [cite: 12] */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     flex-wrap: wrap;
 }
 
 .logo {
-    max-width: 9.5rem; 
+    max-width: 9.5rem; /* Ancho máximo controlado en rem [cite: 13] */
     height: auto;
 }
 
 nav {
+    flex-grow: 1; /* Ocupa el ancho disponible [cite: 14] */
+}
+
+nav ul {
     display: flex;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    list-style: none; /* Reset de lista */
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly; /* Distribución equitativa [cite: 14] */
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: var(--text-color);
-    transition: color 0.3s;
+    color: var(--text-dark);
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: var(--primary-color);
+nav ul li a:hover {
+    color: var(--primary-pink); /* Interacción hover [cite: 15] */
 }
 
-/* 3. Contenedor Principal (Grid) */
+/* 3. CONTENEDOR PRINCIPAL (GRID) [cite: 16] */
 .main-container {
-    display: grid;
-    gap: 1.25rem;
-    max-width: 87.5rem;
-    width: 100%;
-    margin: 0 auto;
-    grid-auto-rows: 1fr;
+    display: grid; /* [cite: 17] */
+    gap: 1.25rem; /* Espaciado de 20px entre tarjetas [cite: 18] */
+    max-width: var(--max-width);
+    margin: 0 auto; /* Centrado [cite: 19] */
+    grid-auto-rows: 1fr; /* Uniformidad de alturas [cite: 20] */
 }
 
-/* 4. Estilos de las Tarjetas */
+/* 4. ESTILOS DE LAS TARJETAS (.CARD) [cite: 30] */
 .card {
-    display: flex; 
-    flex-direction: column; 
-    background-color: var(--white); 
-    border-radius: 0.625rem;
-    padding: 1.25rem;
-    border: 0.0625rem solid #ddd;
+    display: flex; /* [cite: 31] */
+    flex-direction: column; /* [cite: 31] */
+    background-color: var(--white);
+    border-radius: 0.625rem; /* 10px [cite: 32] */
+    padding: 1.25rem; /* [cite: 32] */
+    border: 0.0625rem solid var(--border-color); /* 1px en rem [cite: 33] */
+}
+
+.card h3 {
+    margin-top: 0;
 }
 
 .card p {
-    flex-grow: 1;
+    flex-grow: 1; /* El texto ocupa el espacio sobrante [cite: 34] */
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .card_label {
-    background-color: var(--primary-color); 
-    padding: 0.5rem 1rem; 
-    border-radius: 1rem; 
+    background-color: var(--primary-pink); /* Fondo rosa [cite: 35] */
+    padding: 0.4em 1em; /* Relleno en em [cite: 35] */
+    border-radius: 2rem; /* Bordes redondeados [cite: 35] */
     width: fit-content;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
-/* 5. Sección de Retroalimentación */
+/* 5. SECCIÓN DE RETROALIMENTACIÓN (.FEEDBACK) [cite: 36] */
 .feedback {
-    margin-top: 3rem; 
-    width: 18.75rem; 
+    margin: 3rem auto; /* Fuera del grid y centrada [cite: 37] */
+    width: 18.75rem; /* 300px [cite: 38] */
     text-align: center;
-    font-size: 0.75rem; 
+    font-size: 0.75rem; /* Tamaño pequeño [cite: 39] */
 }
 
 .feedback-container {
-    display: flex; 
-    border: 1px solid #ccc;
+    display: flex; /* Contenedor Flex [cite: 40] */
+    border: 0.0625rem solid var(--border-color);
     border-radius: 0.5rem;
     overflow: hidden;
+    margin-top: 0.5rem;
 }
 
 .feedback-option {
     flex: 1;
-    padding: 0.5rem;
-    background: white;
+    padding: 0.75rem;
+    background: var(--white);
     cursor: pointer;
-    transition: flex 0.3s;
+    transition: all 0.3s ease;
 }
 
+/* Interacción hover: el elemento crece [cite: 40] */
 .feedback-option:hover {
-    flex: 3;
-    background-color: #f0f0f0;
+    flex: 3; /* Crece a proporción 3 [cite: 40] */
+    background-color: #fff9fb;
 }
 
-/* 6. Adaptabilidad (Media Queries) */
+/* 6. ADAPTABILIDAD (MEDIA QUERIES EN REM) [cite: 41, 42] */
 
-/* Tablet (aprox 601px a 900px) */
-@media (min-width: 37.5625rem) {
-    .main-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Escritorio (más de 900px) */
-@media (min-width: 56.25rem) {
-    .main-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* Móvil (hasta 600px) */
+/* MÓVIL (hasta 600px -> 37.5rem) [cite: 43] */
 @media (max-width: 37.5rem) {
     .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 columna [cite: 44] */
     }
-    nav {
-        flex-direction: column;
+    nav ul {
+        flex-direction: column; /* Menú en columna [cite: 45] */
         align-items: center;
-        width: 100%;
+        gap: 1rem;
+    }
+    header {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+/* TABLET (601px a 900px -> 37.56rem a 56.25rem) [cite: 46] */
+@media (min-width: 37.5625rem) and (max-width: 56.25rem) {
+    .main-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas [cite: 47] */
+    }
+}
+
+/* ESCRITORIO (más de 900px -> 56.25rem) [cite: 48] */
+@media (min-width: 56.25rem) {
+    .main-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas [cite: 49] */
     }
 }
